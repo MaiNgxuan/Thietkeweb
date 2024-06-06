@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán Sữa | TH TRUE MILK</title>
+    <link rel="stylesheet" href="thanhtoancss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>TH TRUE MILK</h1>
+    </header>
+
+    <main>
+        <div class="payment-container">
+            <h2>Thanh toán</h2>
+
+            <form action="#">
+                <label for="ten">Họ và tên:</label>
+                <input type="text" id="ten" name="ten" required>
+
+                <label for="dienthoai">Số điện thoại:</label>
+                <input type="tel" id="dienthoai" name="dienthoai" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="diadiem">Địa chỉ:</label>
+                <textarea id="diadiem" name="diadiem" rows="4" required></textarea>
+
+                <div class="promotion-section">
+                    <h2>Mã khuyến mãi (tùy chọn)</h2>
+                    <input type="text" id="promo-code" name="promo-code" placeholder="Nhập mã khuyến mãi">
+                    <button type="button" id="apply-promo-code">Áp dụng</button>
+                </div>
+
+                <button type="submit">Thanh toán</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; [2024] [TH TRUE MILK]</p>
+    </footer>
+</body>
+</html>

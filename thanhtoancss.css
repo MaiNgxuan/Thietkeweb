@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #003f7e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 160px); /* Chiều cao tối thiểu của main */
+}
+
+.payment-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Độ rộng tối đa của form */
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="text"]:focus,
+form input[type="tel"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #003f7e;
+}
+
+.promotion-section {
+  margin-bottom: 20px;
+}
+
+.promotion-section h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+#promo-code {
+  width: calc(100% - 100px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#apply-promo-code {
+  padding: 10px 20px;
+  background-color: #003f7e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #003f7e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button[type="submit"]:hover,
+#apply-promo-code:hover {
+  background-color: #0056a6;
+}
+
+footer {
+  background-color: #003f7e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
