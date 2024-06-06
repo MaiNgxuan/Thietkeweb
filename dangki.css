@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Nền trắng */
+    margin: 0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #003f7e;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 40px 0;
+    background-color: #ffffff; /* Nền trắng */
+}
+
+.registration-content {
+    background-color: rgba(0, 80, 158, 0.9); /* Màu xanh nước biển trong suốt nhẹ để tạo sự nổi bật */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    color: white;
+}
+
+.registration-content h1 {
+    margin-top: 0;
+}
+
+.registration-content label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.registration-content input,
+.registration-content select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.registration-content button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #003f7e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.login-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-text em {
+    color: white;
+}
+
+.login-text a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #003f7e;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
