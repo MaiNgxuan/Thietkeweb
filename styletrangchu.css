@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: white;
+    color: #003f7e;
+    text-align: center;
+  }
+  #logo{
+    position: fixed;
+    top: 30px; 	
+  left: 50px;
+  }
+  header nav ul{
+    list-style-type: none;
+  }
+  p{
+    margin:30px;
+  }
