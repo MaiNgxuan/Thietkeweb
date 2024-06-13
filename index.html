@@ -12,35 +12,31 @@
     <title>TH</title>
     <style>
         .popup-km {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-}
-    .popup-content-km {
-    background-color: white;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
-}
-    .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-    .close:hover, .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
+            display: none; /* Ẩn popup mặc định */
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background-color: rgba(0, 0, 0, 0.5); /* Làm mờ nền */
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        /* Đặt kiểu cho nội dung popup */
+        .popup-content-km {
+            background-color: #fff; 
+            padding: 20px; 
+            border-radius: 5px; 
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+        }
+
+        /* Đặt kiểu cho nút đóng popup */
+        .close {
+            float: right; 
+            font-size: 24px; 
+            cursor: pointer; 
+        }
     </style>
 </head>
 <body>
@@ -309,27 +305,27 @@
 </footer>
 <script src="script.js"></script>
     <script>
-        var popup = document.getElementById("popup-km");
+         // Đợi cho trang được tải hoàn toàn
+        document.addEventListener("DOMContentLoaded", function() {
+            // Lấy popup và nút đóng popup
+            var popup_km = document.getElementById("popup-km");
+            var close_km = document.querySelector(".close");
 
-// Get the <span> element that closes the popup
-var closeButton = document.getElementsByClassName("close")[0];
+            // Hiển thị popup ngay khi trang được tải
+            popup_km.style.display = "flex";
 
-// When the page loads, open the popup
-window.onload = function() {
-    popup.style.display = "block";
-}
+            // Đóng popup khi nhấn vào nút đóng
+            close_km.addEventListener("click", function() {
+                popup_km.style.display = "none";
+            });
 
-// When the user clicks on <span> (x), close the popup
-closeButton.onclick = function() {
-    popup.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the popup, close it
-window.onclick = function(event) {
-    if (event.target == popup) {
-        popup.style.display = "none";
-    }
-}
+            // Đóng popup khi nhấn ra ngoài nội dung popup
+            window.addEventListener("click", function(event) {
+                if (event.target == popup_km) {
+                    popup_km.style.display = "none";
+                }
+            });
+        });
     </script>
 </body>
 </html>
