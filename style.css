@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #f8f9fa; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+.nav-center {
+    flex: 1;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+    position: relative;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(16,58,113); 
+    padding: 10px;
+}
+
+nav .nav-right a {
+    font-size: 18px; 
+}
+nav .nav-right a:hover, nav .nav-right a:active
+{
+    color: rgb(180,160,109);
+}
+button {
+    padding: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(16,58,113);
+    color:white ;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: white;
+    color: rgb(180,160,109);
+}/*nó sẽ ảnh hưởng đến style của button thêm vào giỏ hàng*/
+
+/* CSS cho dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.dropdown-content a {
+    color: rgb(16,58,113);
+    padding: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.dropdown-content a:hover {
+    background-color:#f8f9fa;
+}
+
+/*CSS cho slide*/
+.slider{
+    width: 1300px;
+    max-width: 100vw;
+    height: 700px;
+    margin: 60px 0 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:white;
+    color: rgb(16,58,113);
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(16,58,113);
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+/*CSS cho khuyen mai*/
+#sale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 80px;
+    margin-top: 5px;
+}
+#sale a{
+    width: calc(40%);
+    margin: 20px 10px;
+}
+#sale a img {
+    width: 100%;
+    border-radius: 8px;
+    
+}
+/*CSS cho product card*/
+h2{
+    text-align: center;
+    padding: 20px 0 10px;
+    color: rgb(16,58,113);
+    font-size: 25px;
+}
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 0; 
+    justify-items: center; 
+    margin: 20px 80px;
+}
+.pro {
+    border: 1px solid #ddd;
+    margin:5px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    background-color: #f8f9fa;
+    min-width: 200px;
+    max-width: 200px; 
+    width: 100%;
+    font-size: 14px; 
+    line-height: 1.2em;
+}
+  
+  .pro img {
+    max-width: 100%;
+    vertical-align: top;
+    height: 200px;
+  }
+  
+  .pro figcaption {
+    padding: 10px;
+  }
+  
+  .pro h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 0 4px;
+  }
+  
+  .pro .price {
+    margin: 8px 0;
+    font-weight: 700;
+    color: rgb(16,58,113);
+    font-size: 1.2rem;
+  }
+  .pro:hover{
+    border-color: rgb(16,58,113);
+  }
+.pro a {
+    text-decoration: none;
+    color: black;
+}
+.pro a:hover {
+    color: rgb(16,58,113) ;
+}
+
