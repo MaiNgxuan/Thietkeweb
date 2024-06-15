@@ -38,6 +38,9 @@ a:visited{
 a:hover{
     color: #102e7f;
 }
+    nav .nav-right a {
+    font-size: 18px;
+}
 main{
   background-color: #f4f4f4;
     color: #003f7e;
@@ -70,7 +73,6 @@ h1{
     display: inline-block;
 }
 .dropdown-content {
-    display: grid;
     position: absolute;
     background-color: #f9f9f9;
     width: 200px;
@@ -104,7 +106,7 @@ h1{
                 <li><a href="cau_chuyen_TH.html">Câu chuyện TH</a></li>
                 <li id="dropdown">
                     <a href="#" class="dropbtn">Sản phẩm</a> 
-                    <div class="dropdown-content"> 
+                    <div class="dropdown-content" style="display: grid; grid-template-columns: 1fr;"> 
                         <a href="sua_tuoi_tiet_trung.html">Sữa tươi tiệt trùng</a> 
                         <a href="kem.html">Kem</a>
                         <a href="sua_hat.html">Sữa hạt</a>
