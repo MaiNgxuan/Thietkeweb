@@ -77,7 +77,6 @@ button:hover{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     padding: 10px;
-    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 .dropdown-content a {
