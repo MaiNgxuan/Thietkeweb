@@ -93,7 +93,7 @@ button:hover{
 /*CSS cho banner*/
 #banner {
             width: 100%;
-            max-width: 1000px;
+            max-width: 100wv;
             margin: 60px 0 20px 0;
             overflow: hidden;
             text-align: center;
