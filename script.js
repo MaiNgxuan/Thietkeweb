@@ -2,7 +2,7 @@ var dropdownContent = document.querySelector('.dropdown-content');
 var isOpen = false;
 
 document.querySelector('.dropbtn').addEventListener('click', function(event) {
-    event.preventDefault(); 
+    event.preventDefault();
     console.log('Button clicked');
     console.log('isOpen before:', isOpen);
     if (isOpen) {
@@ -15,4 +15,14 @@ document.querySelector('.dropbtn').addEventListener('click', function(event) {
     }
     console.log('isOpen after:', isOpen);
 });
+
+document.addEventListener('click', function(event) {
+    var dropbtn = document.querySelector('.dropbtn');
+    if (isOpen && !dropdownContent.contains(event.target) && !dropbtn.contains(event.target)) {
+        console.log('Clicked outside, hiding dropdown');
+        dropdownContent.style.display = 'none';
+        isOpen = false;
+    }
+});
+
 
