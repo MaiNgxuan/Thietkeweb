@@ -98,11 +98,11 @@ h1{
                 </li>
                 <li>
                     <div class="search-container">
-                        <input type="text" list="products" placeholder="Tìm kiếm...">
+                        <input type="text" list="products" id="product-input" placeholder="Tìm kiếm...">
                         <datalist id="products">
-                            <option value="Kem">
-                            <option value="Sữa tươi tiệt trùng">
-                            <option value="Sữa hạt">
+                            <option value="Kem" data-link="kem.html">
+                            <option value="Sữa tươi tiệt trùng" data-link="sua_tuoi_tiet_trung.html">
+                            <option value="Sữa hạt" data-link="sua_hat.html">
                         </datalist>
                 </li>        
                 <li><a href="giohang2.html"><i class="fa fa-shopping-cart"></i></a></li>
@@ -165,5 +165,14 @@ h1{
     </div>
 </footer>
     <script src="script.js"></script>
+    <script>
+        document.getElementById('product-input').addEventListener('input', function() {
+    var selected_option = document.querySelector('#products option[value="' + this.value + '"]');
+    if (selected_option) {
+        var product_link = selected_option.getAttribute('data-link');
+        window.location.href = product_link;
+    }
+});
+    </script>
 </body>
 </html>
