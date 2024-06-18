@@ -5,7 +5,7 @@
 }
 nav {
     display: flex;
-    position: sticky;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
@@ -136,14 +136,14 @@ h2{
 .products-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
-    gap: 0; 
+    gap: 10; 
     justify-items: center; 
     margin: 60px 80px 20px;
 }
 .pro {
     border: 1px solid #ddd;
     margin:5px;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     position: relative;
     background-color: #f8f9fa;
@@ -158,6 +158,7 @@ h2{
     max-width: 100%;
     vertical-align: top;
     height: 200px;
+    border-radius: 8px;
   }
   
   .pro figcaption {
@@ -187,7 +188,7 @@ h2{
     color: rgb(16,58,113) ;
 }
 .popup-km {
-    display: none;
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -197,7 +198,6 @@ h2{
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    display: none;
 }
 
 .popup-km-content {
