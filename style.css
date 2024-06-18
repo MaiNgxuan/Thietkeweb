@@ -140,6 +140,7 @@ h2{
     gap: 0; 
     justify-items: center; 
     margin: 20px 80px;
+    z-index: 1;
 }
 .pro {
     border: 1px solid #ddd;
