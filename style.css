@@ -194,18 +194,18 @@ h2{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    //background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
 }
 
 .popup-content {
-    /*background-color: #fff;*/
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     width: auto;
     text-align: center;
-    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);*/
+    //box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     position: relative;
 }
 
@@ -221,7 +221,7 @@ h2{
     right: 10px;
     font-size: 20px;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.5); /* Màu nền của hình tròn */
+    background-color:  rgba(0, 0, 0, 0.5);; /* Màu nền của hình tròn */
     color: #fff; /* Màu của dấu &times; */
     width: 25px; /* Chiều rộng của hình tròn */
     height: 25px; /* Chiều cao của hình tròn */
