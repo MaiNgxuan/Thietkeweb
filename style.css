@@ -188,6 +188,16 @@ h2{
 .pro a:hover {
     color: rgb(16,58,113) ;
 }
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Làm mờ nền */
+    z-index: 999; /* Đặt z-index cao */
+    display: none; /* Mặc định ẩn */
+}
 .popup {
     display: none;
     position: fixed;
