@@ -221,7 +221,7 @@ h2{
     right: 10px;
     font-size: 20px;
     cursor: pointer;
-    background-color:  rgba(0, 0, 0, 0.5);; /* Màu nền của hình tròn */
+    background-color: #f00; /* Màu nền của hình tròn */
     color: #fff; /* Màu của dấu &times; */
     width: 25px; /* Chiều rộng của hình tròn */
     height: 25px; /* Chiều cao của hình tròn */
@@ -230,7 +230,12 @@ h2{
     align-items: center;
     justify-content: center;
     border: none; /* Loại bỏ viền nếu có */
+    transition: background-color 0.3s, transform 0.3s; /* Thêm chuyển tiếp cho hover */
 }
 
+.close-btn:hover {
+    background-color: #c00; /* Màu nền khi hover */
+    transform: scale(1.1); /* Tăng kích thước nhẹ khi hover */
+}
 
 
