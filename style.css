@@ -136,8 +136,6 @@ h2{
 }
 .products-container {
     display: grid;
-    position: relative;
-    z-index: 1;
     grid-template-columns: repeat(5, 1fr); 
     gap: 0; 
     justify-items: center; 
