@@ -189,7 +189,7 @@ h2{
 .pro a:hover {
     color: rgb(16,58,113) ;
 }
-.popup {
+.popup-km {
     display: none;
     position: fixed;
     top: 0;
@@ -203,7 +203,7 @@ h2{
     display: none;
 }
 
-.popup-content {
+.popup-km-content {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -213,13 +213,13 @@ h2{
     position: relative;
 }
 
-.popup-image {
+.popup-km-image {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-.close-btn {
+.close-km-btn {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -237,7 +237,7 @@ h2{
     transition: background-color 0.3s, transform 0.3s; /* Thêm chuyển tiếp cho hover */
 }
 
-.close-btn:hover {
+.close-km-btn:hover {
     background-color: #c00; /* Màu nền khi hover */
     transform: scale(1.1); /* Tăng kích thước nhẹ khi hover */
 }
