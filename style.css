@@ -329,7 +329,7 @@ h2{
         width: 30px;
     }
 }
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 90px) {
             .nav-right ul li {
                 float: none;
                 display: none;
@@ -338,12 +338,12 @@ h2{
                 float: right;
                 display: block;
             }
-            .navbar.responsive ul li {
+            .nav-right.responsive ul li {
                 display: block;
             }
         }
 
-        .navbar.responsive .icon {
+        .nav-right.responsive .icon {
             position: absolute;
             right: 0;
             top: 0;
