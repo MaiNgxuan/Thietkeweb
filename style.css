@@ -239,7 +239,7 @@ h2{
     transform: scale(1.1); /* Tăng kích thước nhẹ khi hover */
 }
 /*resonsive cho ipad pro*/
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     nav {
         flex-direction: row;
         align-items: center; 
@@ -330,25 +330,3 @@ h2{
     }
 }
 
-@media screen and (max-width: 390px) {
-            .nav-right li:not(:first-child) {
-                display: none;
-            }
-            .nav-right li.icon {
-                float: right;
-                display: block;
-            }
-    .nav-right.responsive {
-                position: relative;
-            }
-            .nav-right.responsive .icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-            .nav-right.responsive li {
-                float: none;
-                display: block;
-                text-align: left;
-            }
-        }
