@@ -19,6 +19,7 @@
             <a href="cau_chuyen_TH.html"><img src="images/Logo_th_group.png" alt="Logo_th_group" style="height: 50px;"></a>
         </div>
         <div class="nav-center"></div>
+        <!--
         <div class="nav-right">
             <ul>
                 <li><a href="#">Trang chủ</a></li>
@@ -62,7 +63,53 @@
                 </li>        
                 <li><a href="giohang2.html"><i class="fa fa-shopping-cart"></i></a></li>
             </ul>
-        </div>
+        </div> 
+        -->
+        <div class="nav-right">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="cau_chuyen_TH.html">Câu chuyện TH</a></li>
+                <li id="dropdown">
+                    <a href="#" class="dropbtn">Sản phẩm</a> 
+                    <div class="dropdown-content"> 
+                        <a href="sua_tuoi_tiet_trung.html">Sữa tươi tiệt trùng</a> 
+                        <a href="kem.html">Kem</a>
+                        <a href="sua_hat.html">Sữa hạt</a>
+                     </div>
+                </li>
+                <li>
+                    <button id="open-popup" class="login-btn">Đăng nhập</button>
+                    <div id="login-popup" class="popup">
+                        <div class="popup-content">
+                            <span class="close-btn" id="close-popup">&times;</span>
+                            <h2>Đăng nhập tài khoản</h2>
+                            <form>
+                                <label for="username">Tên đăng nhập</label>
+                                <input type="text" id="username" name="username" required>
+                                <label for="password">Mật khẩu</label>
+                                <input type="password" id="password" name="password" required>
+                                <button type="submit">Đăng nhập</button>
+                            </form>
+                            <p class="register-text">
+                            <em>Bạn chưa có tài khoản? <a href="dangki.html" target="_blank">Đăng kí tại đây</a>.</em>
+                            </p>
+                        </div>
+                    </div>
+                    <script src="dangnhap2.js"></script>
+                </li>
+                <li>
+                    <div class="search-container">
+                        <input type="text" list="products" id="product-input" placeholder="Tìm kiếm...">
+                        <datalist id="products">
+                            <option value="Kem" data-link="kem.html">
+                            <option value="Sữa tươi tiệt trùng" data-link="sua_tuoi_tiet_trung.html">
+                            <option value="Sữa hạt" data-link="sua_hat.html">
+                        </datalist>
+                </li>        
+                <li><a href="giohang2.html"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+        </div> 
+        
     </nav>
 </header>
 <div id="banner" ><img src="images/banner1.jpg" alt="Banner Image"></div>
@@ -74,65 +121,34 @@
         </div>
     </div>
     <script>
-        /*
-    document.addEventListener('DOMContentLoaded', function() {
-    const popup = document.querySelector('.popup-km');
-    const closeButton = document.querySelector('.close-km-btn');
-
-    // Hàm để mở popup
-    function openPopup() {
-        popup.style.display = 'flex'; // Sử dụng 'flex' để kích hoạt flexbox cho căn giữa
-    }
-
-    // Hàm để đóng popup
-    function closePopup() {
-        popup.style.display = 'none';
-    }
-
-    // Gắn sự kiện click cho nút đóng
-    closeButton.addEventListener('click', closePopup);
-
-    // Gắn sự kiện click cho overlay để đóng popup khi click ra ngoài
-    popup.addEventListener('click', function(event) {
-        if (event.target === popup) {
-            closePopup();
-        }
-    });
-
-    // Mở popup cho ví dụ, bạn có thể thay thế bằng điều kiện hoặc sự kiện khác
-    openPopup();
-});
-*/
         document.addEventListener('DOMContentLoaded', function() {
-    const popup = document.querySelector('.popup-km');
-    const closeButton = document.querySelector('.close-km-btn');
+        const popup = document.querySelector('.popup-km');
+        const closeButton = document.querySelector('.close-km-btn');
 
-    // Hàm để mở popup
-    function openPopup() {
-        popup.style.display = 'flex'; // Hiển thị popup
-        document.body.style.overflow = 'hidden'; // Ngăn cuộn nội dung phía sau
-    }
+        // Hàm để mở popup
+        function openPopup() {
+            popup.style.display = 'flex'; // Hiển thị popup
+            document.body.style.overflow = 'hidden'; // Ngăn cuộn nội dung phía sau
+         }
 
-    // Hàm để đóng popup
-    function closePopup() {
-        popup.style.display = 'none'; // Ẩn popup
-        document.body.style.overflow = 'auto'; // Cho phép cuộn nội dung phía sau trở lại
-    }
-
-    // Gắn sự kiện click cho nút đóng
-    closeButton.addEventListener('click', closePopup);
-
-    // Gắn sự kiện click cho overlay để đóng popup khi click ra ngoài
-    popup.addEventListener('click', function(event) {
-        if (event.target === popup) {
-            closePopup();
+        // Hàm để đóng popup
+        function closePopup() {
+            popup.style.display = 'none'; // Ẩn popup
+            document.body.style.overflow = 'auto'; // Cho phép cuộn nội dung phía sau trở lại
         }
+
+        // Gắn sự kiện click cho nút đóng
+        closeButton.addEventListener('click', closePopup);
+
+        // Gắn sự kiện click cho overlay để đóng popup khi click ra ngoài
+        popup.addEventListener('click', function(event) {
+            if (event.target === popup) {
+            closePopup();
+            }
+        });
+
+        openPopup();
     });
-
-    // Mở popup (ví dụ, bạn có thể thay thế bằng sự kiện hoặc điều kiện khác)
-    openPopup();
-});
-
     </script>
 <!--Khuyến mãi-->
 <div id="sale">
