@@ -238,7 +238,7 @@ h2{
     background-color: #c00; /* Màu nền khi hover */
     transform: scale(1.1); /* Tăng kích thước nhẹ khi hover */
 }
-//responsive cho ipad pro
+/*resonsive cho ipad pro*/
 @media only screen and (max-width: 1024px) {
     nav {
         flex-direction: row;
