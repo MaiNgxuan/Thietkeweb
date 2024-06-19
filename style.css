@@ -267,7 +267,7 @@ h2{
     }
 
     .nav-right {
-        flex-direction: row;
+        flex-direction: row; 
         width: auto;
     }
 
@@ -288,11 +288,12 @@ h2{
 
     #sale {
         flex-direction: row;
+
         padding: 10px;
     }
 
     #sale a {
-        width: 200px; 
+        width: 300px;
         margin: 10px 10px;
     }
 
@@ -328,14 +329,3 @@ h2{
         width: 30px;
     }
 }
-
-@media sreen and(max-width: 390px){
-     nav {
-        flex-direction: row;
-        align-items: center; 
-        padding: 10px;
-    }
-
-    .nav-left img {
-        height: 30px;
-    }
