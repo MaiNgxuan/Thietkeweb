@@ -13,73 +13,10 @@
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <style>
-        .navbar {
-    background-color: #333;
-    overflow: hidden;
-    position: relative;
-}
-
-.navbar-brand {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    color: white;
-}
-
-.navbar-toggler {
-    display: none;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-.navbar-nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.nav-item {
-    padding: 1rem;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-}
-
-.nav-link:hover {
-    background-color: #575757;
-}
-
-@media (max-width: 768px) {
-    .navbar-nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #333;
-    }
-    
-    .navbar-toggler {
-        display: block;
-    }
-    
-    .navbar-nav.active {
-        display: flex;
-    }
-}
-    </style>
 </head>
 <body>
 <header>
 
-    <!--
     <nav>
         <div class="nav-left">
             <a href="cau_chuyen_TH.html"><img src="images/Logo_th_group.png" alt="Logo_th_group" style="height: 50px;"></a>
@@ -130,84 +67,6 @@
             </ul>
         </div> 
 </nav>
-        -->
-
-
-    <nav>
-        <div class="nav-left">
-            <a href="cau_chuyen_TH.html"><img src="images/Logo_th_group.png" alt="Logo_th_group" style="height: 50px;"></a>
-        </div>
-        <div class="nav-center"></div>
-        <div class="nav-right">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="cau_chuyen_TH.html">Câu chuyện TH</a></li>
-                <li id="dropdown">
-                    <a href="#" class="dropbtn">Sản phẩm</a> 
-                    <div class="dropdown-content"> 
-                        <a href="sua_tuoi_tiet_trung.html">Sữa tươi tiệt trùng</a> 
-                        <a href="kem.html">Kem</a>
-                        <a href="sua_hat.html">Sữa hạt</a>
-                     </div>
-                </li>
-                <li>
-                    <button id="open-popup" class="login-btn">Đăng nhập</button>
-                    <div id="login-popup" class="popup">
-                        <div class="popup-content">
-                            <span class="close-btn" id="close-popup">&times;</span>
-                            <h2>Đăng nhập tài khoản</h2>
-                            <form>
-                                <label for="username">Tên đăng nhập</label>
-                                <input type="text" id="username" name="username" required>
-                                <label for="password">Mật khẩu</label>
-                                <input type="password" id="password" name="password" required>
-                                <button type="submit">Đăng nhập</button>
-                            </form>
-                            <p class="register-text">
-                            <em>Bạn chưa có tài khoản? <a href="dangki.html" target="_blank">Đăng kí tại đây</a>.</em>
-                            </p>
-                        </div>
-                    </div>
-                    <script src="dangnhap2.js"></script>
-                </li>
-                <li>
-                    <div class="search-container">
-                        <input type="text" list="products" id="product-input" placeholder="Tìm kiếm...">
-                        <datalist id="products">
-                            <option value="Kem" data-link="kem.html">
-                            <option value="Sữa tươi tiệt trùng" data-link="sua_tuoi_tiet_trung.html">
-                            <option value="Sữa hạt" data-link="sua_hat.html">
-                        </datalist>
-                </li>        
-                <li><a href="giohang2.html"><i class="fa fa-shopping-cart"></i></a></li>
-            </ul>
-        </div> 
-        </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        document.getElementById('open-popup').addEventListener('click', function() {
-            document.getElementById('login-popup').style.display = 'block';
-        });
-
-        document.getElementById('close-popup').addEventListener('click', function() {
-            document.getElementById('login-popup').style.display = 'none';
-        });
-
-        window.onclick = function(event) {
-            if (event.target == document.getElementById('login-popup')) {
-                document.getElementById('login-popup').style.display = 'none';
-            }
-        };
-    </script>
-    </nav>
-
-    
 </header>
 <div id="banner" ><img src="images/banner1.jpg" alt="Banner Image"></div>
 
