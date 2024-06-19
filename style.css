@@ -338,12 +338,12 @@ h2{
                 float: right;
                 display: block;
             }
-            .nav-right.responsive ul li {
+            .navbar.responsive ul li {
                 display: block;
             }
         }
 
-        .nav-right.responsive .icon {
+        .navbar.responsive .icon {
             position: absolute;
             right: 0;
             top: 0;
