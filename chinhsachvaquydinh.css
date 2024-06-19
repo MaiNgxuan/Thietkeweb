@@ -1,8 +1,4 @@
-@media only screen and (max-width: 600px) {
-    /* Kiểu CSS cho các thiết bị có chiều rộng tối đa 600px */
-    body {
-        background-color: lightblue;
-    }
+
 
 body {
     font-family: Arial, san-serif;
