@@ -1,3 +1,12 @@
+body {
+    font-family: DINRoundOT;
+    background-color: #ffffff; /* Nền trắng */
+    margin: 0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 .registration-container {
     display: flex;
     justify-content: center;
