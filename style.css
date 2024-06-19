@@ -329,7 +329,7 @@ h2{
         width: 30px;
     }
 }
-@media screen and (max-width: 90px) {
+@media screen and (max-width: 390px) {
             .nav-right ul li {
                 float: none;
                 display: none;
