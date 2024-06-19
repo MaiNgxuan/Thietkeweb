@@ -329,3 +329,13 @@ h2{
     }
 }
 
+@media sreen and(max-width: 390px){
+     nav {
+        flex-direction: row;
+        align-items: center; 
+        padding: 10px;
+    }
+
+    .nav-left img {
+        height: 40px;
+    }
