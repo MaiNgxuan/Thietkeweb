@@ -329,12 +329,3 @@ h2{
         width: 30px;
     }
 }
-
-@media screen and (max-width: 390px){
-    nav {
-        font-size: 14px;
-    }
-    footer {
-    grid-area: footer;
-  }
-}
