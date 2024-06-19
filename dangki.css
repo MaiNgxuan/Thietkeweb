@@ -1,7 +1,7 @@
 body {
     font-family: DINRoundOT;
     background-color: #ffffff; /* Nền trắng */
-    margin: 0;
+    margin: 50px 0 0 0;
     color: black;
     display: flex;
     flex-direction: column;
