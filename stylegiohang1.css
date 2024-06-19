@@ -4,7 +4,7 @@
 
 .cart-container {
   background-color: white;
-  max-width: 800px;
+  max-width: 90%;
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
@@ -21,12 +21,14 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
+  table-layout: fixed; /* Để các cột có chiều rộng cố định */
 }
 
 table th, table td {
   padding: 15px;
   text-align: center;
   border-bottom: 1px solid #ddd;
+  word-wrap: break-word; /* Để nội dung trong các ô không bị tràn */
 }
 
 table th {
@@ -74,4 +76,53 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  table th, table td {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  table td img {
+    width: 40px;
+  }
+
+  .total h3 {
+    font-size: 1.2em;
+  }
+
+  .total p {
+    font-size: 1em;
+  }
+
+  .checkout button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  table th, table td {
+    padding: 5px;
+    font-size: 0.8em;
+  }
+
+  table td img {
+    width: 30px;
+  }
+
+  .total h3 {
+    font-size: 1em;
+  }
+
+  .total p {
+    font-size: 0.9em;
+  }
+
+  .checkout button {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
 }
