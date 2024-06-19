@@ -241,8 +241,8 @@ h2{
 //responsive cho ipad pro
 @media only screen and (max-width: 1024px) {
     nav {
-        flex-direction: row; /* Giữ thanh navbar nằm ngang */
-        align-items: center; /* Căn giữa các mục trong thanh navbar */
+        flex-direction: row;
+        align-items: center; 
         padding: 10px;
     }
 
@@ -251,7 +251,7 @@ h2{
     }
 
     nav ul {
-        flex-direction: row; /* Đảm bảo các mục của navbar nằm ngang */
+        flex-direction: row;
         width: auto;
     }
 
@@ -267,19 +267,19 @@ h2{
     }
 
     .nav-right {
-        flex-direction: row; /* Giữ các mục trong phần nav-right nằm ngang */
+        flex-direction: row;
         width: auto;
     }
 
     .search-container {
-        width: auto; /* Để ô tìm kiếm không chiếm hết chiều rộng */
+        width: auto; 
         display: flex;
         justify-content: center;
         margin: 10px 0;
     }
 
     #product-input {
-        width: 200px; /* Điều chỉnh kích thước ô tìm kiếm */
+        width: 200px; 
     }
 
     #banner {
@@ -292,7 +292,7 @@ h2{
     }
 
     #sale a {
-        width: 200px; /* Điều chỉnh kích thước các phần tử bên trong */
+        width: 200px; 
         margin: 10px 10px;
     }
 
