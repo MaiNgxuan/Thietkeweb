@@ -329,4 +329,22 @@ h2{
         width: 30px;
     }
 }
+@media screen and (max-width: 490px) {
+            .nav-right ul li {
+                float: none;
+                display: none;
+            }
+            .nav-right ul li.icon {
+                float: right;
+                display: block;
+            }
+            .navbar.responsive ul li {
+                display: block;
+            }
+        }
 
+        .navbar.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
