@@ -341,10 +341,13 @@ h2{
             .navbar.responsive ul li {
                 display: block;
             }
-        }
 
         .navbar.responsive .icon {
             position: absolute;
             right: 0;
             top: 0;
         }
+}
+.nav-right .icon {
+            display: none;
+        }  
