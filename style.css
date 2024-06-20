@@ -239,7 +239,7 @@ h2{
     transform: scale(1.1); /* Tăng kích thước nhẹ khi hover */
 }
 /*resonsive cho ipad pro*/
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) { 
     nav {
         flex-direction: row;
         align-items: center; 
