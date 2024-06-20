@@ -331,17 +331,14 @@ h2{
 }
 @media screen and (max-width: 390px) {
             .nav-right ul li {
-                float: none;
                 display: none;
             }
-            .navbar.responsive ul li {
+            .navbar.responsive .nav-right ul li {
                 display: block;
             }
 
         .navbar.responsive .icon {
-            position: absolute;
-            right: 0;
-            top: 0;
+            display: block;
         }
     .nav-right ul li a{
     display: block;
@@ -350,7 +347,7 @@ h2{
     text-decoration: none;
 }
 }
-.nav-right .icon {
+    .nav-right .icon {
             display: none;
         }  
 
