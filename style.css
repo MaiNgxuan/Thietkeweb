@@ -334,10 +334,6 @@ h2{
                 float: none;
                 display: none;
             }
-            .nav-right ul li.icon {
-                float: right;
-                display: block;
-            }
             .navbar.responsive ul li {
                 display: block;
             }
@@ -347,14 +343,14 @@ h2{
             right: 0;
             top: 0;
         }
-}
-.nav-right .icon {
-            display: none;
-        }  
-.nav-right ul li a{
+    .nav-right ul li a{
     display: block;
-    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
+}
+.nav-right .icon {
+            display: none;
+        }  
+
