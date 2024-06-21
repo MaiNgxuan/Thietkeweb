@@ -288,6 +288,7 @@ h2{
 
     #sale {
         flex-direction: row;
+
         padding: 10px;
     }
 
@@ -328,3 +329,26 @@ h2{
         width: 30px;
     }
 }
+@media screen and (max-width: 390px) {
+            .nav-right ul li {
+                display: none;
+            }
+            .navbar.responsive ul li {
+                display: block;
+            }
+    .nav-right ul li.icon {
+                display: block;
+            }
+        .navbar.responsive .icon {
+            display: block;
+        }
+    .nav-right ul li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+}
+    .nav-right .icon {
+            display: none;
+        }
