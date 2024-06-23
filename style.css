@@ -65,10 +65,6 @@ button:hover{
 }/*nó sẽ ảnh hưởng đến style của button thêm vào giỏ hàng*/
 
 /* CSS cho dropdown */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
 .dropdown-content {
     display: none;
     position: absolute;
