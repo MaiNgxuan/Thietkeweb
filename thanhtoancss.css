@@ -10,13 +10,6 @@ body {
   padding: 0;
 }
 
-header {
-  background-color: #003f7e;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
-
 h1 {
   font-size: 2em;
 }
@@ -107,9 +100,4 @@ button[type="submit"]:hover,
   background-color: #0056a6;
 }
 
-footer {
-  background-color: #003f7e;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
+
