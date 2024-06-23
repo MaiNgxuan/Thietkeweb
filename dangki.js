@@ -9,6 +9,6 @@ document.getElementById('registration-form').addEventListener('submit', function
         return;
     }
 
-    // Submit the form or handle registration logic here
+    // Submit the form 
     alert('Đăng ký thành công!');
 });
