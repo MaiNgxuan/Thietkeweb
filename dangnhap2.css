@@ -75,3 +75,12 @@
 .register-text a:hover {
     text-decoration: underline;
 }
+.search-container {
+    margin: 0 2px 0 10px;
+}
+.search-container input[type="text"] {
+    border: none;
+    width: fit-content;
+    height: 25px;
+    border-radius: 50px;
+}
